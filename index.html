@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Layout Lab 网页布局教学网站，学习 Flex、Grid 与响应式设计。">
+  <title>Layout Lab | 网页布局实验室</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Layout Lab 首页">
+      <span class="brand-mark">LL</span>
+      <span><strong>Layout Lab</strong><small>网页布局实验室</small></span>
+    </a>
+    <nav class="top-nav" aria-label="主导航">
+      <a href="#chapters" data-i18n="nav.chapters">章节</a>
+      <a href="#howto" data-i18n="nav.howto">使用方式</a>
+      <a href="#about" data-i18n="nav.about">关于</a>
+    </nav>
+    <button class="language-switch" type="button" data-language-toggle aria-label="切换语言">EN</button>
+  </header>
+
+  <main>
+    <section class="hero home-hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">WEB LAYOUT · INTERACTIVE COURSE</p>
+        <h1 data-i18n="hero.title">网页布局实验室</h1>
+        <p class="hero-lead" data-i18n="hero.lead">从页面结构到响应式设计，用可操作的案例理解网页为什么这样排。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#chapters" data-i18n="hero.primary">开始学习</a>
+          <a class="button button-quiet" href="lesson.html#flex" data-i18n="hero.secondary">直接体验演示</a>
+        </div>
+        <div class="hero-stats" aria-label="课程信息">
+          <div><strong>04</strong><span data-i18n="stats.lessons">个章节</span></div>
+          <div><strong>03</strong><span data-i18n="stats.demos">个动态演示</span></div>
+          <div><strong>02</strong><span data-i18n="stats.languages">种语言</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="网页布局示意图">
+        <div class="art-toolbar"><span></span><span></span><span></span><b>layout-preview</b></div>
+        <div class="art-canvas">
+          <div class="art-sidebar"><i></i><i></i><i></i><i></i></div>
+          <div class="art-main">
+            <div class="art-heading"><span></span><span></span></div>
+            <div class="art-grid"><i class="art-card card-a"></i><i class="art-card card-b"></i><i class="art-card card-c"></i><i class="art-card card-d"></i></div>
+          </div>
+        </div>
+        <span class="art-note note-one">grid</span>
+        <span class="art-note note-two">flex</span>
+        <span class="art-note note-three">responsive</span>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="chapters">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">01 / COURSE MAP</p>
+          <h2 data-i18n="chapters.title">课程章节</h2>
+        </div>
+        <p data-i18n="chapters.intro">从“内容如何组织”开始，逐步走到可以实时调整的页面布局。</p>
+      </div>
+      <div class="chapter-grid">
+        <a class="chapter-card chapter-card-dark" href="lesson.html#basics">
+          <span class="card-number">01</span><span class="card-status" data-i18n="common.live">可学习</span>
+          <h3 data-i18n="chapters.basics.title">页面布局基础</h3>
+          <p data-i18n="chapters.basics.desc">理解层级、分组、对齐、留白与盒模型，先建立布局思维。</p>
+          <span class="card-link" data-i18n="common.enter">进入章节</span>
+        </a>
+        <a class="chapter-card" href="lesson.html#flex">
+          <span class="card-number">02</span><span class="card-status" data-i18n="common.live">可学习</span>
+          <h3 data-i18n="chapters.flex.title">Flex 一维布局</h3>
+          <p data-i18n="chapters.flex.desc">用主轴、交叉轴和间距控制导航、工具栏与卡片行。</p>
+          <span class="card-link" data-i18n="common.enter">进入章节</span>
+        </a>
+        <a class="chapter-card" href="lesson.html#grid">
+          <span class="card-number">03</span><span class="card-status" data-i18n="common.live">可学习</span>
+          <h3 data-i18n="chapters.grid.title">Grid 二维布局</h3>
+          <p data-i18n="chapters.grid.desc">用行、列与网格区域搭建课程卡片和仪表盘。</p>
+          <span class="card-link" data-i18n="common.enter">进入章节</span>
+        </a>
+        <a class="chapter-card" href="lesson.html#responsive">
+          <span class="card-number">04</span><span class="card-status" data-i18n="common.live">可学习</span>
+          <h3 data-i18n="chapters.responsive.title">响应式设计</h3>
+          <p data-i18n="chapters.responsive.desc">让同一组内容适应桌面、平板和手机屏幕。</p>
+          <span class="card-link" data-i18n="common.enter">进入章节</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="howto">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">02 / HOW TO USE</p>
+          <h2 data-i18n="howto.title">使用方式</h2>
+        </div>
+        <p data-i18n="howto.intro">每个章节都把理论、代码和实时效果放在同一条学习路径上。</p>
+      </div>
+      <div class="howto-grid">
+        <article class="howto-item"><span class="step-label">A</span><h3 data-i18n="howto.one.title">先读讲解</h3><p data-i18n="howto.one.desc">从布局问题和使用场景出发，理解属性背后的设计原因。</p></article>
+        <article class="howto-item"><span class="step-label">B</span><h3 data-i18n="howto.two.title">再看代码</h3><p data-i18n="howto.two.desc">把可视化结果对应到 HTML、CSS 和 JavaScript 的关键位置。</p></article>
+        <article class="howto-item"><span class="step-label">C</span><h3 data-i18n="howto.three.title">最后动手调</h3><p data-i18n="howto.three.desc">修改参数，观察布局变化，再用自己的页面复现它。</p></article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="about">
+      <div class="section-heading section-heading-light">
+        <div><p class="section-kicker">03 / ABOUT THIS COURSE</p><h2 data-i18n="about.title">关于这个网站</h2></div>
+        <p data-i18n="about.intro">这是一个围绕网页布局原理制作的交互式教学案例。</p>
+      </div>
+      <div class="about-grid">
+        <div><span class="about-label" data-i18n="about.theory.label">理论重点</span><p data-i18n="about.theory.text">视觉层级、空间关系、Flex、Grid、媒体查询与响应式设计。</p></div>
+        <div><span class="about-label" data-i18n="about.stack.label">技术实现</span><p data-i18n="about.stack.text">原生 HTML、CSS、JavaScript，可直接部署到 GitHub Pages。</p></div>
+        <div><span class="about-label" data-i18n="about.principle.label">学习原则</span><p data-i18n="about.principle.text">案例为中心；每个概念都配有可运行的视觉结果。</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Layout Lab · 2026</span>
+    <span data-i18n="footer.text">网页布局交互式教学网站</span>
+    <a href="https://github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+  </footer>
+</body>
+</html>

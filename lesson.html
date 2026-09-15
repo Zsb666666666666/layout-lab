@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Layout Lab 章节教学页。">
+  <title>Lesson | Layout Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/lesson.js"></script>
+</head>
+<body class="lesson-page">
+  <header class="site-header lesson-header">
+    <a class="brand" href="index.html" aria-label="Layout Lab 首页">
+      <span class="brand-mark">LL</span>
+      <span><strong>Layout Lab</strong><small>网页布局实验室</small></span>
+    </a>
+    <div class="lesson-header-actions">
+      <a class="back-link" href="index.html" data-i18n="lesson.back">返回课程首页</a>
+      <button class="language-switch" type="button" data-language-toggle aria-label="切换语言">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="lesson-intro">
+      <div>
+        <p class="eyebrow" id="lesson-kicker">CHAPTER 02 · FLEX</p>
+        <h1 id="lesson-title">Flex 一维布局</h1>
+        <p id="lesson-summary">用主轴、交叉轴和间距控制导航、工具栏与卡片行。</p>
+      </div>
+      <div class="lesson-progress"><span data-i18n="lesson.progress">学习路径</span><strong id="lesson-count">02 / 04</strong></div>
+    </section>
+
+    <div class="lesson-layout">
+      <aside class="lesson-sidebar">
+        <p class="sidebar-label" data-i18n="lesson.chapters">章节目录</p>
+        <nav id="lesson-menu" aria-label="章节目录">
+          <a href="lesson.html#basics" data-lesson-link="basics"><span>01</span><b data-i18n="chapters.basics.title">页面布局基础</b></a>
+          <a href="lesson.html#flex" data-lesson-link="flex"><span>02</span><b data-i18n="chapters.flex.title">Flex 一维布局</b></a>
+          <a href="lesson.html#grid" data-lesson-link="grid"><span>03</span><b data-i18n="chapters.grid.title">Grid 二维布局</b></a>
+          <a href="lesson.html#responsive" data-lesson-link="responsive"><span>04</span><b data-i18n="chapters.responsive.title">响应式设计</b></a>
+        </nav>
+        <div class="sidebar-note"><span class="note-dot"></span><p data-i18n="lesson.sidebarNote">按照“讲解 → 代码 → 演示”的顺序学习，效果会更清楚。</p></div>
+      </aside>
+
+      <section class="lesson-content">
+        <div class="lesson-tabs" role="tablist" aria-label="教学内容切换">
+          <button class="lesson-tab is-active" type="button" role="tab" aria-selected="true" data-tab="explain"><span>01</span><b data-i18n="tabs.explain">讲解</b><small>Explain</small></button>
+          <button class="lesson-tab" type="button" role="tab" aria-selected="false" data-tab="code"><span>02</span><b data-i18n="tabs.code">关键代码</b><small>Code</small></button>
+          <button class="lesson-tab" type="button" role="tab" aria-selected="false" data-tab="demo"><span>03</span><b data-i18n="tabs.demo">动态演示</b><small>Demo</small></button>
+        </div>
+
+        <article class="lesson-panel is-visible" data-panel="explain" role="tabpanel">
+          <div id="explain-content"></div>
+        </article>
+        <article class="lesson-panel" data-panel="code" role="tabpanel">
+          <div class="code-heading"><div><p class="section-kicker">SOURCE / LIVE EXAMPLE</p><h2 data-i18n="code.title">关键代码</h2></div><button class="small-button" id="copy-code" type="button" data-i18n="code.copy">复制代码</button></div>
+          <p class="panel-lead" id="code-description"></p>
+          <pre class="code-block"><code id="code-output"></code></pre>
+          <p class="code-tip" data-i18n="code.tip">代码中的关键属性会在“动态演示”中被控件实时修改。</p>
+        </article>
+        <article class="lesson-panel" data-panel="demo" role="tabpanel">
+          <div class="demo-heading"><div><p class="section-kicker">INTERACTIVE / TRY IT</p><h2 data-i18n="demo.title">动态演示</h2></div><button class="small-button" id="reset-demo" type="button" data-i18n="demo.reset">重置演示</button></div>
+          <p class="panel-lead" id="demo-description"></p>
+          <div id="demo-root"></div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>Layout Lab · 2026</span><span data-i18n="footer.text">网页布局交互式教学网站</span><a href="index.html" data-i18n="lesson.home">课程首页</a>
+  </footer>
+</body>
+</html>
